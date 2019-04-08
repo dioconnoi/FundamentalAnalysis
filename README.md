@@ -3,7 +3,7 @@ A procedure to relatively quickly collect all Financial Data (Balance Sheet, Inc
 
 The script leaves a lot of room to perform a quantitative industry analysis. Next to that, by also gathering Stock Data, the analysis can be further extended. There is something to say about that these statistics are also given within Yahoo Finance. Thus, you could also scrape them from there via similar methods.
 
-Financial Statements of (most) S&P500 companies also included as Excel files. These tickers are collected via a similar method as the main file. The code for this can be found here and is based on the code from Sentdex: 
+Financial Statements of some S&P500 companies are also included as Excel files (output from script). These tickers are collected via a similar method as the main file. The code for this can be found below and is based on the code from Sentdex: 
 
 ```
 def save_sp500_tickers():

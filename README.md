@@ -1,2 +1,2 @@
-# Financial-Statement-Scraping
-A procedure to relatively quickly collect all Financial Data (Balance Sheet, Income Statement &amp; Cashflows) of pre-selected companies. 
+# Yahoo Financial Statement Collector
+A procedure to relatively quickly collect all Financial Data (Balance Sheet, Income Statement &amp; Cashflows) of pre-selected companies. It makes use of Yahoo Finance that collects data over the last four years. Therefore, this script is also limited to that. Potential optimizations can and should be done when working with hundreds of companies at the same time. 

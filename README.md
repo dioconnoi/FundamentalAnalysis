@@ -25,6 +25,7 @@ def save_sp500_tickers():
 
 save_sp500_tickers()
 ```
+Similar tickers can be scraped from different Wikipedia pages, for example https://en.wikipedia.org/wiki/AEX_index, with this method by changing the url from the _resp_ variable.
 
 ##  Stock Data Fetching
 With the script below, also the Stock Data can be retrieved. There is no need to set the symbol variable again if you run this code after the main file. Next to that, by adding a column like _['Close']_ after the yf.download function, you can filter out columns like Volumes, High, Low and such.

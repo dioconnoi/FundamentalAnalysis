@@ -41,4 +41,4 @@ Addition: leaving the symbol field blank will let the function download the [mos
 *Note: This is very much a work-in-progess but currently quite operational already. Suggestions are much appreciated.*
 
 ## Examples
-[Balance Sheet](Examples/Balance Sheet TSLA.PNG)
+[Balance Sheet](Examples/Balance\Sheet\TSLA.PNG)

@@ -1,5 +1,5 @@
 # Fundamental Analysis with Yahoo Finance (WIP)
-By scraping data from Yahoo Finance, a full fundamental analysis can be done on a sector with just the click of a few buttons.
+By scraping data from Yahoo Finance, a full fundamental analysis can be done on a sector with just the click of a few buttons. Some example images can be found in the 'Examples' folder to understand what the script produces.
 
 ## Functions
 A short description of the available functions within the package:
@@ -39,6 +39,3 @@ Addition: leaving the symbol field blank will let the function download the [mos
 - [ ] Sort out the description.
 
 *Note: This is very much a work-in-progess but currently quite operational already. Suggestions are much appreciated.*
-
-## Examples
-[Balance Sheet](Examples/BalanceSheetTSLA.PNG)

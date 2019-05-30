@@ -9,11 +9,11 @@ A short description of the available functions within the package:
 - `summary()`
    - Scapes data from the 'homepage' of a ticker ([example](https://finance.yahoo.com/quote/TSLA?p=TSLA)), alters text (%, k, M, B) and puts everything in a neat DataFrame for comparison.
 - `balance_sheet()`
-   - Scrapes data from the Financials -> Balance Sheet page and order it in a DataFrame. Allows for comparison of multiple companies.
+   - Scrapes data from the Financials > Balance Sheet page and order it in a DataFrame. Allows for comparison of multiple companies.
 - `income_statement()`
-   - Scrapes data from the Financials -> Income Statement page and order it in a DataFrame. Allows for comparison of multiple companies.
+   - Scrapes data from the Financials > Income Statement page and order it in a DataFrame. Allows for comparison of multiple companies.
 - `cashflows()`
-   - Scrapes data from the Financials -> Cash Flows page and order it in a DataFrame. Allows for comparison of multiple companies.
+   - Scrapes data from the Financials > Cash Flows page and order it in a DataFrame. Allows for comparison of multiple companies.
 - `ratios()`
    - Scrapes data from the Statistics page, , alters text (%, k, M, B) and puts everything in a neat DataFrame for comparison.
 - `balance_sheet_analysis()`

@@ -32,10 +32,10 @@ A short description of the available functions within the package:
 Addition: leaving the symbol field blank will let the function download the [most trending tickers](https://finance.yahoo.com/trending-tickers/) according to Yahoo Finance.
 
 ## To-Do
-- [] Test, Test, TEST!
-- [] Run an actual analysis and see what is missing
-- [] Create a fully fledged package that can be used with pip
-- [] Sort out the description.
+- [ ] Test, Test, TEST!
+- [ ] Run an actual analysis and see what is missing
+- [ ] Create a fully fledged package that can be used with pip
+- [ ] Sort out the description.
 
 *Note: This is very much a work-in-progess but currently quite operational already. Suggestions are much appreciated.*
 

@@ -32,6 +32,7 @@ A short description of the available functions within the package:
 Addition: leaving the symbol field blank will let the function download the [most trending tickers](https://finance.yahoo.com/trending-tickers/) according to Yahoo Finance.
 
 ## To-Do
+- [ ] Add Docstrings.
 - [ ] Test, Test, TEST!
 - [ ] Run an actual analysis and see what is missing
 - [ ] Create a fully fledged package that can be used with pip

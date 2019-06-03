@@ -39,7 +39,7 @@ Addition: leaving the symbol field blank will let the function download the [mos
 3. Import the package (`import FundamentalAnalysis as fa`)
 
 ## Example usage
-Preparing
+Collect data
 
 `symbol = ['TSLA','AAPL','MSFT']`
 
@@ -50,6 +50,8 @@ Preparing
 `cashflows = fa.cashflows(symbol)`
 
 `ratios = fa.ratios(symbol`
+
+`stock_data = fa.stock_data(2015, 2019, symbol, include_returns=True)`
 
 Now you run different analysis with i.e. `ratio_analysis(ratios, symbol)` or plot different metrics manually.
 

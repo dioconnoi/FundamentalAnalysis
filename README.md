@@ -53,7 +53,7 @@ ratios = fa.ratios(symbol)
 stock_data = fa.stock_data(2015, 2019, symbol, include_returns=True)
 ```
 
-Now you can run different analysis with i.e. `ratio_analysis(ratios, symbol)` or plot different metrics manually.
+Afterwards you can compare the numbers between companies or plot them to see posible growth/decline. Next to that, by using one of the analysis functions, you can quickly see most of the important metrics. (i.e. `ratio_analysis(ratios, symbol)`)
 
 ## To-Do
 - [ ] Add Docstrings.

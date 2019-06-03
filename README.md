@@ -51,7 +51,7 @@ ratios = fa.ratios(symbol)
 stock_data = fa.stock_data(2015, 2019, symbol, include_returns=True)
 ```
 
-Now you run different analysis with i.e. `ratio_analysis(ratios, symbol)` or plot different metrics manually.
+Now you can run different analysis with i.e. `ratio_analysis(ratios, symbol)` or plot different metrics manually.
 
 ## To-Do
 - [ ] Add Docstrings.

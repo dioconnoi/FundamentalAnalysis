@@ -39,7 +39,7 @@ Addition: leaving the symbol field blank will let the function download the [mos
 3. Import the package (`import FundamentalAnalysis as fa`)
 
 ## Example usage
-Collect data
+Collect data from Yahoo Finance including balance sheets, income statements, cashflows, ratios and stock data of all selected tickers.
 
 `symbol = ['TSLA','AAPL','MSFT']`
 

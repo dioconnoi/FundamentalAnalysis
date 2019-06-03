@@ -33,6 +33,21 @@ A short description of the available functions within the package:
    
 Addition: leaving the symbol field blank will let the function download the [most trending tickers](https://finance.yahoo.com/trending-tickers/) according to Yahoo Finance.
 
+## Installation
+1. Download the libary 'FundamentalAnalysis.py'
+2. Place it in the same folder as you are working in (or install it in the core)
+3. Import the package (`import FundamentalAnalysis as fa`)
+
+## Example usage
+Preparing
+`symbol = ['TSLA','AAPL','MSFT']`
+`balance_sheet = fa.balance_sheet(symbol)`
+`income_statement = fa.income_statement(symbol)`
+`cashflows = fa.cashflows(symbol)`
+`ratios = fa.ratios(symbol`
+
+Now you run different analysis with i.e. `ratio_analysis(ratios, symbol)` or plot different metrics.
+
 ## To-Do
 - [ ] Add Docstrings.
 - [ ] Test, Test, TEST!

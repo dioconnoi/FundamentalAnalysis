@@ -40,13 +40,18 @@ Addition: leaving the symbol field blank will let the function download the [mos
 
 ## Example usage
 Preparing
+
 `symbol = ['TSLA','AAPL','MSFT']`
+
 `balance_sheet = fa.balance_sheet(symbol)`
+
 `income_statement = fa.income_statement(symbol)`
+
 `cashflows = fa.cashflows(symbol)`
+
 `ratios = fa.ratios(symbol`
 
-Now you run different analysis with i.e. `ratio_analysis(ratios, symbol)` or plot different metrics.
+Now you run different analysis with i.e. `ratio_analysis(ratios, symbol)` or plot different metrics manually.
 
 ## To-Do
 - [ ] Add Docstrings.

@@ -41,17 +41,15 @@ Addition: leaving the symbol field blank will let the function download the [mos
 ## Example usage
 Collect data from Yahoo Finance including balance sheets, income statements, cashflows, ratios and stock data of all selected tickers.
 
-`symbol = ['TSLA','AAPL','MSFT']`
+```
+symbol = ['TSLA','AAPL','MSFT']
 
-`balance_sheet = fa.balance_sheet(symbol)`
-
-`income_statement = fa.income_statement(symbol)`
-
-`cashflows = fa.cashflows(symbol)`
-
-`ratios = fa.ratios(symbol`
-
-`stock_data = fa.stock_data(2015, 2019, symbol, include_returns=True)`
+balance_sheet = fa.balance_sheet(symbol)
+income_statement = fa.income_statement(symbol)
+cashflows = fa.cashflows(symbol)
+ratios = fa.ratios(symbol`
+stock_data = fa.stock_data(2015, 2019, symbol, include_returns=True)
+```
 
 Now you run different analysis with i.e. `ratio_analysis(ratios, symbol)` or plot different metrics manually.
 

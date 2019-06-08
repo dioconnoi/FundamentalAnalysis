@@ -1,7 +1,4 @@
-# Fundamental Analysis Library
 By scraping data from Yahoo Finance, a full fundamental analysis can be done on a sector with just the click of a few buttons. Some example images can be found in the 'Examples' folder to understand what the script produces.
-
-*Note: This is a work-in-progess but currently fully operational already. Suggestions are much appreciated.*
 
 ## Functions
 A short description of the available functions within the package:
@@ -34,9 +31,8 @@ A short description of the available functions within the package:
 Addition: leaving the symbol field blank will let the function download the [most trending tickers](https://finance.yahoo.com/trending-tickers/) according to Yahoo Finance.
 
 ## Installation
-1. Download the libary 'FundamentalAnalysis.py'
-2. Place it in the same folder as you are working in (or install it in the core)
-3. Import the package (`import FundamentalAnalysis as fa`)
+1. `pip install FundamentalAnalysis`
+2. (within Python) `import FundamentalAnalysis as fa`
 
 ## Example usage
 Collect data from Yahoo Finance including balance sheets, income statements, cashflows, ratios and stock data of all selected tickers.
@@ -54,10 +50,3 @@ stock_data = fa.stock_data(2015, 2019, symbol, include_returns=True)
 ```
 
 Afterwards you can compare the numbers between companies or plot them to see posible growth/decline. Next to that, by using one of the analysis functions, you can quickly see most of the important metrics. (i.e. `ratio_analysis(ratios, symbol)`)
-
-## To-Do
-- [ ] Add Docstrings.
-- [ ] Test, Test, TEST!
-- [ ] Run an actual analysis and see what is missing
-- [ ] Create a fully fledged package that can be used with pip
-- [ ] Sort out the description.

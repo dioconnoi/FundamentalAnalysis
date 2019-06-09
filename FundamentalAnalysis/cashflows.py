@@ -1,5 +1,27 @@
 def cashflows(symbol = 0, write_pickle = False, read_pickle = False):
     
+    '''
+    Gathers all cashflows data from Yahoo Finance for the selected companies,
+    defined by symbol, formats the data and places it in a DataFrame.
+        
+    Parameters
+    ----------
+    symbol        : string or list
+                    Company ticker(s) either displayed as a string for one company or as a list
+                    when multiple companies are selected.
+
+    write_pickle  : boolean
+                    Default on False. Gives the option to write to pickle.
+
+    read_pickle   : boolean
+                    Default on False. Gives the option to read the last created pickle.
+        
+    Returns
+    -------
+    cashflows     : DataFrame
+                    All obtained cashflows data from the selected symbols.
+    '''
+    
     import lxml
     from lxml import html
     import requests

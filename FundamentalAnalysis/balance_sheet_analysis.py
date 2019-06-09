@@ -1,5 +1,41 @@
 def balance_sheet_analysis(balance_sheet, symbol = 0, log=False):
 
+    '''
+    Graphically gives an overview of the various balance sheet items overtime.
+    When selecting multiple symbols, you are able to visually see the difference
+    between the companies. 
+        
+    Parameters
+    ----------
+    balance_sheet : DataFrame
+                    The data created with the balance_sheet() function.
+    
+    symbol        : string or list
+                    Company ticker(s) either displayed as a string for one company or as a list
+                    when multiple companies are selected.
+
+    log           : boolean
+                    Default on False. Gives the option to convert everything in log values.
+        
+    Returns
+    -------
+    The following graphs:
+        cash
+        inventory
+        accounts receivable
+        short term investments
+        property, plant and equipment
+        total current assets
+        accounts payable
+        long term debt
+        other current liabilities
+        total current liabilities
+        common stock
+        preferred stock
+        retained earnings
+        total stockholder equity
+    '''
+
     import lxml
     from lxml import html
     import requests

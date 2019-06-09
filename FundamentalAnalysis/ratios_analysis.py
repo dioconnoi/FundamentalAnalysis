@@ -1,5 +1,35 @@
 def ratio_analysis(ratios, rotation = False):
 
+    '''
+    Graphically gives an overview of the various ratios items sorted from low to high.
+    When the ratios DataFrame features multiple companies, you are able to visually 
+    see the difference between the companies. 
+        
+    Parameters
+    ----------
+    ratios        : DataFrame
+                    The data created with the ratios() function.
+
+    rotation      : boolean
+                    Default on False. Rotates xlabels vertically when True.
+        
+    Returns
+    -------
+    The following graphs:
+        pe trailing
+        pe forward
+        peg ratio
+        price to sales ratio
+        price to book ratio
+        book value per share
+        return on assets (ROA)
+        return on equity (ROE)
+        profit margin
+        beta
+        current ratio
+        debt to equity ratio
+    '''
+
     import numpy as np
     import pandas as pd 
     import matplotlib.pyplot as plt

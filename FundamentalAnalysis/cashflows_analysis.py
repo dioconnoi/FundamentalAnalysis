@@ -1,4 +1,31 @@
-def cashflows_analysis(cashflows, symbol=0, log=False):    
+def cashflows_analysis(cashflows, symbol=0, log=False):   
+
+    '''
+    Graphically gives an overview of the various cashflows items overtime.
+    When selecting multiple symbols, you are able to visually see the difference
+    between the companies. 
+        
+    Parameters
+    ----------
+    cashflows     : DataFrame
+                    The data created with the cashflows() function.
+    
+    symbol        : string or list
+                    Company ticker(s) either displayed as a string for one company or as a list
+                    when multiple companies are selected.
+
+    log           : boolean
+                    Default on False. Gives the option to convert everything in log values.
+        
+    Returns
+    -------
+    The following graphs:
+        net income
+        total operating actitivies
+        total investing activities
+        total financing activities
+        operating profit
+    '''
 
     import lxml
     from lxml import html
@@ -19,7 +46,6 @@ def cashflows_analysis(cashflows, symbol=0, log=False):
     total_investing_activities = pd.DataFrame(index=cashflows.index)
     total_financing_activities = pd.DataFrame(index=cashflows.index)
     operating_profit = pd.DataFrame(index=cashflows.index)
-    net_income = pd.DataFrame(index=cashflows.index)
             
     if type(symbol) == list:
         if log == True:

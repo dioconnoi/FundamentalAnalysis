@@ -1,4 +1,36 @@
 def stock_data(begin_time, end_time, symbol = 0, write_pickle = False, read_pickle = False, include_returns = False):
+
+    '''
+    Provides Stock Data for each company based on a given time period and orders
+    the data in a DataFrame. Excludes unavailable company data (i.e. private company)
+    and has the option to also provide returns.
+        
+    Parameters
+    ----------
+    begin_time      : integer or datetime
+                      The starting data, can be an integer (i.e. 2008) or datetime (i.e. '15-07-2008)
+
+    end_time        : integer or datetime
+                      The ending data, can be an integer (i.e. 2012) or datetime (i.e. '28-07-2012)
+    
+    symbol          : string or list
+                      Company ticker(s) either displayed as a string for one company or as a list
+                      when multiple companies are selected.
+
+    write_pickle    : boolean
+                      Default on False. Gives the option to write to pickle.
+
+    read_pickle     : boolean
+                      Default on False. Gives the option to read the last created pickle.
+
+    include_returns : boolean
+                      Default on False. Gives the option to include returns data.
+        
+    Returns
+    -------
+    stockdata       : DataFrame
+                      Shows closing values (and returns) per symbol.
+    '''
     
     import lxml
     from lxml import html

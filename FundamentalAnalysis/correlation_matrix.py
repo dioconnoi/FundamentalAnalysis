@@ -1,5 +1,31 @@
 def correlation_matrix(stock_data, symbol = 0, graph = False):
 
+    '''
+    Based on the stock_data() function (when include_returns is set to True),
+    calculate ratios and put them in a DataFrame for comparison. Includes the option
+    to visually show the correlations.
+        
+    Parameters
+    ----------
+    stock_data          : DataFrame
+                          Data from the stock_data() function where it checks for the Returns column.
+    
+    symbol              : string or list
+                          Company ticker(s) either displayed as a string for one company or as a list
+                          when multiple companies are selected.
+
+    graph               : boolean
+                          Default on False. Visually graphs the correlations with Seaborn.
+        
+    Returns
+    -------
+    correlation_matrix  : DataFrame
+                          Shows correlations between companies.
+
+    if graph = True     : Seaborn Graph
+                          Visually shows correlations between companies.
+    '''
+
     import lxml
     from lxml import html
     import requests

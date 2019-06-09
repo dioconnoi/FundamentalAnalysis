@@ -29,6 +29,7 @@ def ratios(symbol = 0, write_pickle = False, read_pickle = False):
     import pandas as pd
     import matplotlib.pyplot as plt
     import pickle
+    pd.options.mode.chained_assignment = None
     
     if read_pickle == True:
         ratios = pd.read_pickle('ratios')

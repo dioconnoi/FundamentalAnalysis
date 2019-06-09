@@ -32,8 +32,10 @@ A short description of the available functions within the package. Please see th
 Addition: leaving the ticker field blank will cause the functions to download the [most trending tickers](https://finance.yahoo.com/trending-tickers/) according to Yahoo Finance.
 
 ## Installation
-1. `pip install FundamentalAnalysis` or (within Jupyter Notebook) `!pip install FundamentalAnalysis`
-2. (within Python) `import FundamentalAnalysis as fa`
+1. Install Package
+   - Command Prompt: `pip install FundamentalAnalysis`
+   - Jupyter Notebook: `!pip install FundamentalAnalysis`
+2. `import FundamentalAnalysis as fa`
 
 ## Example usage
 Collect data from Yahoo Finance including balance sheets, income statements, cashflows, ratios and stock data of all selected tickers.

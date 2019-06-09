@@ -1,4 +1,4 @@
-def ratio_analysis(ratios, rotation = False):
+def ratios_analysis(ratios, rotation = False):
 
     '''
     Graphically gives an overview of the various ratios items sorted from low to high.

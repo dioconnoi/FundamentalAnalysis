@@ -47,7 +47,7 @@ def income_statement(symbol = 0, write_pickle = False, read_pickle = False):
         
     if type(symbol) == list:
         for s in symbol:
-            income_statement_url = 'https://finance.yahoo.com/quote/' + s + '/income_statement?p=' + s
+            income_statement_url = 'https://finance.yahoo.com/quote/' + s + '/financials?p=' + s
 
             page = requests.get(income_statement_url)
             tree = html.fromstring(page.content)
@@ -84,7 +84,7 @@ def income_statement(symbol = 0, write_pickle = False, read_pickle = False):
                     income_statement[s, c] = data[c]
                     
     else:
-        income_statement_url = 'https://finance.yahoo.com/quote/' + symbol + '/income_statement?p=' + symbol
+        income_statement_url = 'https://finance.yahoo.com/quote/' + symbol + '/financials?p=' + symbol
 
         page = requests.get(income_statement_url)
         tree = html.fromstring(page.content)

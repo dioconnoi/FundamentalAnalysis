@@ -1,35 +1,35 @@
 # FundamentalAnalysis
-By scraping data from Yahoo Finance, a full fundamental analysis can be done on a sector with just the click of a few buttons. Some example images can be found in the 'Examples' folder to understand what the script produces. Analysis function graphs are only shown partially.
+This package can scrape financial data from Yahoo Finance for multiple companies at once. This includes the ratios, balance sheets, income statements, cashflows and stock data. Furthermore, the analysis functions are able identify the state of the companies over the last years and how they are performing against each other.
 
 ## Functions
-A short description of the available functions within the package:
+A short description of the available functions within the package. Please see the docstrings for further explanation.
 
 - `summary()`
-   - Scapes data from the 'homepage' of a ticker ([example](https://finance.yahoo.com/quote/TSLA?p=TSLA)), alters text (%, k, M, B) and puts everything in a neat DataFrame for comparison.
+   - Scapes data from the 'homepage' of a ticker ([example](https://finance.yahoo.com/quote/TSLA?p=TSLA)), alters text (%, k, M, B) to ensure everything is seen as a float or integer and puts everything in a DataFrame for comparison.
 - `balance_sheet()`
-   - Scrapes data from the Financials > Balance Sheet page and order it in a DataFrame. Allows for comparison of multiple companies.
+   - Scrapes data from the Financials > Balance Sheet page and orders it in a DataFrame.
 - `income_statement()`
-   - Scrapes data from the Financials > Income Statement page and order it in a DataFrame. Allows for comparison of multiple companies.
+   - Scrapes data from the Financials > Income Statement page and orders it in a DataFrame. 
 - `cashflows()`
-   - Scrapes data from the Financials > Cash Flows page and order it in a DataFrame. Allows for comparison of multiple companies.
+   - Scrapes data from the Financials > Cash Flows page and orders it in a DataFrame.
 - `ratios()`
-   - Scrapes data from the Statistics page, , alters text (%, k, M, B) and puts everything in a neat DataFrame for comparison.
+   - Scrapes data from the Statistics page, alters text (%, k, M, B) to ensure everything is seen as a float or integer and puts everything in a DataFrame for comparison.
 - `balance_sheet_analysis()`
-   - Uses data from `balance_sheet()` to create several graphs that show the trend over time. Useful to visually indentify the succes/failure of the company without needing to look extensively at the numbers.
+   - Uses data from `balance_sheet()` to create several graphs that show the trend over time.
 - `income_statement_analysis()`
-   - Uses data from `income_statement()` to create several graphs that show the trend over time. Useful to visually indentify the succes/failure of the company without needing to look extensively at the numbers.
+   - Uses data from `income_statement()` to create several graphs that show the trend over time.
 - `cashflow_analysis()`
-   - Uses data from `cashflows()` to create several graphs that show the trend over time. Useful to visually indentify the succes/failure of the company without needing to look extensively at the numbers.
+   - Uses data from `cashflows()` to create several graphs that show the trend over time.
 - `ratio_analysis()`
-   - Uses data from `ratios()` to create several graphs that show the current ratios. Useful to visually indentify the performance between companies.
+   - Uses data from `ratios()` to create several graphs that show the ratios right now.
 - `stock_data()`
    - Retrieves stock data based on the `pandas_datareader` library. Extras include the recognition of private companies to prevent a sudden stop as well as the calculation of returns.
 - `correlation_matrix()`
    - A matrix that uses input from `stock_data()` to calculate correlations between the symbols as well as visually show this in a graph when `graph=True`.
 - `rss_feed()`
-   - News obtained from Yahoo Finance RSS for each chosen symbol. Can potentially be useful to read more about a company without leaving Python.
+   - News obtained from Yahoo Finance RSS for each chosen ticker. Can potentially be useful to read more about a company without leaving Python.
    
-Addition: leaving the symbol field blank will let the function download the [most trending tickers](https://finance.yahoo.com/trending-tickers/) according to Yahoo Finance.
+Addition: leaving the ticker field blank will cause the functions to download the [most trending tickers](https://finance.yahoo.com/trending-tickers/) according to Yahoo Finance.
 
 ## Installation
 1. `pip install FundamentalAnalysis`

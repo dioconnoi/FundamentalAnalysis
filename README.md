@@ -1,4 +1,5 @@
-By scraping data from Yahoo Finance, a full fundamental analysis can be done on a sector with just the click of a few buttons. Some example images can be found in the 'Examples' folder to understand what the script produces.
+# FundamentalAnalysis
+By scraping data from Yahoo Finance, a full fundamental analysis can be done on a sector with just the click of a few buttons. Some example images can be found in the 'Examples' folder to understand what the script produces. Analysis function graphs are only shown partially.
 
 ## Functions
 A short description of the available functions within the package:

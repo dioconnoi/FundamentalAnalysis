@@ -1,5 +1,5 @@
 # FundamentalAnalysis
-This package can scrape financial data from Yahoo Finance for multiple companies at once. This includes the ratios, balance sheets, income statements, cashflows and stock data. Furthermore, the analysis functions are able identify the state of the companies over the last years and how they are performing against each other.
+This package can scrape financial data from Yahoo Finance for multiple companies. This includes the ratios, balance sheets, income statements, cashflows and stock data. Furthermore, the analysis functions are able identify the state of the companies over the last years and how they are performing against each other.
 
 ## Functions
 A short description of the available functions within the package. Please see the docstrings for further explanation.

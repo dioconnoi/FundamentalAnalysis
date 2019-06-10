@@ -22,6 +22,14 @@ def summary(symbol = 0, write_pickle = False, read_pickle = False):
                      All obtained summary data from the selected symbols.
     '''
 
+    import lxml
+    from lxml import html
+    import requests
+    import numpy as np
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    import pickle
+
     if read_pickle == True:
         summary = pd.read_pickle('summary')
         return summary

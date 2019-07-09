@@ -53,10 +53,3 @@ stock_data = fa.stock_data(2015, 2019, symbol, include_returns=True)
 ```
 
 Afterwards you can compare the numbers between companies or plot them to see posible growth/decline. Next to that, by using one of the analysis functions, you can quickly see most of the important metrics. (i.e. `ratio_analysis(ratios, symbol)`)
-
-## To-Do
-
-- [ ] Fix if the full 4 years of data are not available. (could not broadcast input array from shape (2) into shape (4))
-- [ ] Optimise Stock Data function to be quicker (currently performing a forloop over each symbol to prevent a full stop)
-- [ ] Additional ratios like Inventory over Sales.
-- [ ] Newsfeed with clickable links plus find the most important news bits over the last years.

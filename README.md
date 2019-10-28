@@ -3,6 +3,8 @@ This package can scrape financial data from Yahoo Finance for multiple companies
 
 **NOTE: This library currently is not able to retrieve Fundamentals data (balance sheets, income statements and cashflows) due to a large overhaul of the Yahoo Fundamentals page. Suggestions how to fix this are highly appreciated.**
 
+**NOTE2: I plan to fix the package at the end of the year.**
+
 ## Functions
 A short description of the available functions within the package. Please see the docstrings for further explanation.
 

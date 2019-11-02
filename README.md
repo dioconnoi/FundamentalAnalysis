@@ -1,28 +1,24 @@
 # FundamentalAnalysis
 This package can scrape financial data from Yahoo Finance for multiple companies. This includes the ratios, balance sheets, income statements, cashflows and stock data. Furthermore, the analysis functions are able identify the state of the companies over the last years and how they are performing against each other.
 
-**NOTE: This library currently is not able to retrieve Fundamentals data (balance sheets, income statements and cashflows) due to a large overhaul of the Yahoo Fundamentals page. Suggestions how to fix this are highly appreciated.**
-
-**NOTE2: I plan to fix the package at the end of the year.**
-
 ## Functions
 A short description of the available functions within the package. Please see the docstrings for further explanation.
 
 - `summary()`
    - Scapes data from the 'homepage' of a ticker ([example](https://finance.yahoo.com/quote/TSLA?p=TSLA)), alters text (%, k, M, B) to ensure everything is seen as a float or integer and puts everything in a DataFrame for comparison.
-- `balance_sheet()`
+~~- `balance_sheet()`
    - Scrapes data from the Financials > Balance Sheet page and orders it in a DataFrame.
-- `income_statement()`
+~~- `income_statement()`
    - Scrapes data from the Financials > Income Statement page and orders it in a DataFrame. 
-- `cashflows()`
+~~- `cashflows()`
    - Scrapes data from the Financials > Cash Flows page and orders it in a DataFrame.
 - `ratios()`
    - Scrapes data from the Statistics page, alters text (%, k, M, B) to ensure everything is seen as a float or integer and puts everything in a DataFrame for comparison.
-- `balance_sheet_analysis()`
+~~- `balance_sheet_analysis()`
    - Uses data from `balance_sheet()` to create several graphs that show the trend over time.
-- `income_statement_analysis()`
+~~- `income_statement_analysis()`
    - Uses data from `income_statement()` to create several graphs that show the trend over time.
-- `cashflow_analysis()`
+~~- `cashflow_analysis()`
    - Uses data from `cashflows()` to create several graphs that show the trend over time.
 - `ratio_analysis()`
    - Uses data from `ratios()` to create several graphs that show the ratios right now.
@@ -49,9 +45,6 @@ import FundamentalAnalysis as fa
 
 symbol = ['TSLA','AAPL','MSFT']
 
-balance_sheet = fa.balance_sheet(symbol)
-income_statement = fa.income_statement(symbol)
-cashflows = fa.cashflows(symbol)
 ratios = fa.ratios(symbol)
 stock_data = fa.stock_data(2015, 2019, symbol, include_returns=True)
 ```

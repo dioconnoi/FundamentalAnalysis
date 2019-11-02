@@ -6,20 +6,8 @@ A short description of the available functions within the package. Please see th
 
 - `summary()`
    - Scapes data from the 'homepage' of a ticker ([example](https://finance.yahoo.com/quote/TSLA?p=TSLA)), alters text (%, k, M, B) to ensure everything is seen as a float or integer and puts everything in a DataFrame for comparison.
-~~- `balance_sheet()`
-   - Scrapes data from the Financials > Balance Sheet page and orders it in a DataFrame.~~-
-~~- `income_statement()`
-   - Scrapes data from the Financials > Income Statement page and orders it in a DataFrame. ~~-
-~~- `cashflows()`
-   - Scrapes data from the Financials > Cash Flows page and orders it in a DataFrame.~~-
 - `ratios()`
    - Scrapes data from the Statistics page, alters text (%, k, M, B) to ensure everything is seen as a float or integer and puts everything in a DataFrame for comparison.
-~~- `balance_sheet_analysis()`
-   - Uses data from `balance_sheet()` to create several graphs that show the trend over time.~~-
-~~- `income_statement_analysis()`
-   - Uses data from `income_statement()` to create several graphs that show the trend over time.~~-
-~~- `cashflow_analysis()`
-   - Uses data from `cashflows()` to create several graphs that show the trend over time.~~-
 - `ratio_analysis()`
    - Uses data from `ratios()` to create several graphs that show the ratios right now.
 - `stock_data()`
@@ -50,3 +38,18 @@ stock_data = fa.stock_data(2015, 2019, symbol, include_returns=True)
 ```
 
 Afterwards you can compare the numbers between companies or plot them to see posible growth/decline. Next to that, by using one of the analysis functions, you can quickly see most of the important metrics. (i.e. `ratio_analysis(ratios, symbol)`)
+
+## Broken functions
+These functions are unfortunately broken. Please visit [Ranaroussi's yFinance](https://github.com/ranaroussi/yfinance) for working fundamentals functions. Pull requests to fix these functions are also much appreciated.
+- `balance_sheet()`
+   - Scrapes data from the Financials > Balance Sheet page and orders it in a DataFrame.
+- `income_statement()`
+   - Scrapes data from the Financials > Income Statement page and orders it in a DataFrame.
+- `cashflows()`
+   - Scrapes data from the Financials > Cash Flows page and orders it in a DataFrame.
+- `balance_sheet_analysis()`
+   - Uses data from `balance_sheet()` to create several graphs that show the trend over time.
+- `income_statement_analysis()`
+   - Uses data from `income_statement()` to create several graphs that show the trend over time.
+- `cashflow_analysis()`
+   - Uses data from `cashflows()` to create several graphs that show the trend over time.

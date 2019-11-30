@@ -1,6 +1,8 @@
 # FundamentalAnalysis
 This package can scrape financial data from Yahoo Finance for multiple companies. This includes the ratios, balance sheets, income statements, cashflows and stock data. Furthermore, the analysis functions are able identify the state of the companies over the last years and how they are performing against each other.
 
+***Note**: This package has been deprecated. While the functions listed below still work, the other half of the package does not. Due to the existence of a very similar package, [Ranaroussi's yFinance](https://github.com/ranaroussi/yfinance), I currently have no intend to fix these issues but rather contribute to improving yFinance.*
+
 ## Functions
 A short description of the available functions within the package. Please see the docstrings for further explanation.
 
@@ -8,7 +10,7 @@ A short description of the available functions within the package. Please see th
    - Scapes data from the 'homepage' of a ticker ([example](https://finance.yahoo.com/quote/TSLA?p=TSLA)), alters text (%, k, M, B) to ensure everything is seen as a float or integer and puts everything in a DataFrame for comparison.
 - `ratios()`
    - Scrapes data from the Statistics page, alters text (%, k, M, B) to ensure everything is seen as a float or integer and puts everything in a DataFrame for comparison.
-- `ratio_analysis()`
+- `ratios_analysis()`
    - Uses data from `ratios()` to create several graphs that show the ratios right now.
 - `stock_data()`
    - Retrieves stock data based on the `pandas_datareader` library. Extras include the recognition of private companies to prevent a sudden stop as well as the calculation of returns.
